@@ -1,0 +1,261 @@
+{
+    // CPP Compiler Settings and Path
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "C_Cpp.default.includePath": [
+        "/usr/include",
+        "/usr/local/include",
+        "${workspaceFolder}/**"
+    ],
+
+    // General VSCode App Settings
+    "update.showReleaseNotes": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "extensions.ignoreRecommendations": true,
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": false,
+
+    // Terminal Settings
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontSize": 14,
+
+    // Explorer Settings
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    // Zen Mode Settings
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "single",
+    "zenMode.centerLayout": false,
+
+    // Workbench Settings
+    "workbench.colorTheme": "Intellij Color Theme",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.enablePreview": true,
+    "workbench.tree.indent": 20,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.colorCustomizations": {
+        "[Intellij Color Theme]": {
+            "titleBar.activeBackground": "#202020",
+            "titleBar.border": "#282828",
+            "activityBar.background": "#202020",
+            "activityBar.border": "#282828",
+            "sideBar.background": "#202020",
+            "sideBar.border": "#282828",
+            "editor.background": "#282828",
+            "tab.activeBackground": "#282828",
+            "tab.inactiveBackground": "#202020",
+            "tab.border": "#202020",
+            "panel.background": "#202020",
+            "terminal.background": "#202020"
+        },
+        "statusBar.background": "#282858",
+        "statusBar.noFolderBackground": "#282858",
+        "statusBar.debuggingBackground": "#282858",
+        "statusBar.foreground": "#888888",
+        "statusBar.debuggingForeground": "#888888"
+    },
+
+    // Editor Settings
+    "editor.lineNumbers": "relative",
+    "editor.scrollBeyondLastLine": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'Cousine Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.stickyScroll.enabled": false,
+    "editor.tabSize": 2,
+    "editor.accessibilitySupport": "off",
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.tokenColorCustomizations": {
+        "[Intellij Color Theme]": { 
+            "textMateRules": [{ "scope":"string.quoted.docstring.multi.python", "settings": { "foreground": "#69676c" }}]
+        }
+    },
+
+
+    //////////////////////////////////////////////////
+    // Extensions Settings...
+    //////////////////////////////////////////////////
+    "liveServer.settings.donotShowInfoMsg": true,
+    "tailwind-fold.autoFold": false,
+    "tailwind-fold.foldStyle": "QUOTES",
+
+    // BEGIN VSCODE VIM SETUP
+    "extensions.experimental.affinity": {       // To improve performance?
+        "vscodevim.vim": 1
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#282828",
+        "#ffffff"
+    ],
+    "vim.statusBarColors.insert": [
+        "#284828",
+        "#888888"
+    ],
+    "vim.statusBarColors.visual": [
+        "#482858",
+        "#888888"
+    ],
+    "vim.statusBarColors.commandlineinprogress": [
+        "#282858",
+        "#888888"
+    ],
+    "vim.surround": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": " ",
+    "vim.insertModeKeyBindings": [
+        {
+        // Pressing j twice ("before": ["j", "j"]) simulates the Esc key ("after": ["<Esc>"]).
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Vim Shortcuts
+
+        // VSCode Shortcuts
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        },
+        {
+            "before": ["<Leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<Leader>", "u"],
+            "commands": ["editor.action.transformToTitlecase"]
+        },
+        {
+            "before": ["<Leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Vim Shortcuts
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["<C-w>", "h"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<C-w>", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-w>", "k"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-w>", "l"]
+        },
+        // VSCode Shortcuts
+        {
+            "before": ["<Leader>", "z"],
+            "commands": ["workbench.action.toggleZenMode"]
+        },
+        {
+            "before": ["<Leader>", "m"],
+            "commands": ["workbench.explorer.fileView.focus"]
+        },
+        {
+            "before": ["<Leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<Leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<Leader>", "f", "b"],
+            "commands": ["workbench.action.showEditorsInActiveGroup"]
+        },
+        {
+            "before": ["<Leader>", "f", "g"],
+            // "commands": ["periscope.search"]
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<Leader>", "t"],
+            "commands": ["workbench.action.terminal.focus"]
+        },
+        // View Commands
+        {
+            "before": ["<Leader>", "n"],
+            "commands": ["workbench.action.files.newUntitledFile"]
+        },
+        {
+            "before": ["<Leader>", "q"],
+            "commands": ["workbench.action.closeEditorsAndGroup"]
+        },
+        {
+            "before": ["<Leader>", "s", "i"],
+            "commands": ["workbench.action.increaseViewSize"]
+        },
+        {
+            "before": ["<Leader>", "s", "d"],
+            "commands": ["workbench.action.decreaseViewSize"]
+        },
+        {
+            "before": ["<Leader>", "s", "c"],
+            "commands": ["workbench.action.closeEditorsInOtherGroups"]
+        },
+        {
+            "before": ["<Leader>", "s", "h"],
+            "commands": ["workbench.action.splitEditorDown", "workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<Leader>", "s", "v"],
+            "commands": ["workbench.action.splitEditorRight", "workbench.action.quickOpen"]
+        },
+    ],
+    // END OF VSCODE VIM SETUP
+}
