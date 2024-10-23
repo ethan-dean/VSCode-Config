@@ -62,15 +62,20 @@
   },
   // TODO: Close the file being viewed from search after exiting search
   {
-    "key": "e",
+    "key": "ctrl+e",
     "command": "runCommands",
     "when": "!editorfocus && searchViewletFocus",
     "args": {
       "commands": [
         "workbench.action.focusActiveEditorGroup",
-        "workbench.action.closeUnmodifiedEditors"
+        // "workbench.action.closeUnmodifiedEditors"
       ]
     }
+  },
+  {
+    "key": "Enter",
+    "command": "search.action.openResult",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible",
   },
   {
     "key": "ctrl+c",
@@ -91,7 +96,7 @@
   "when": "editorTextFocus && foldingEnabled"
   },
   /////////////////////////////////////////////////////////////////////////
-  // Scroll up and down on quick open menu
+  // Quick Open Menu
   /////////////////////////////////////////////////////////////////////////
   {
   "key": "ctrl+j",
@@ -112,7 +117,7 @@
   // File Explorer
   /////////////////////////////////////////////////////////////////////////
   {
-    "key": "e",
+    "key": "ctrl+e",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "!editorFocus && !inputFocus"
   },
@@ -124,7 +129,7 @@
   {
     "key": "Enter",
     "command": "list.toggleExpand",
-    "when": "listFocus && !inputFocus",
+    "when": "filesExplorerFocus && listFocus && !inputFocus",
   }, 
   {
     "key": "Enter",

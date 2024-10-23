@@ -14,6 +14,7 @@
     "extensions.ignoreRecommendations": true,
     "breadcrumbs.enabled": false,
     "window.commandCenter": false,
+    "window.menuBarVisibility" : false, // WinOS only
 
     // Terminal Settings
     "terminal.integrated.inheritEnv": false,
@@ -54,11 +55,11 @@
             "panel.background": "#202020",
             "terminal.background": "#202020"
         },
-        "statusBar.background": "#282858",
-        "statusBar.noFolderBackground": "#282858",
-        "statusBar.debuggingBackground": "#282858",
-        "statusBar.foreground": "#888888",
-        "statusBar.debuggingForeground": "#888888"
+        "statusBar.background": "#282828",
+        "statusBar.noFolderBackground": "#282828",
+        "statusBar.debuggingBackground": "#282828",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
     },
 
     // Editor Settings
@@ -165,6 +166,9 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // Vim Shortcuts
+        {
+            "before": ["<Leader>", "g"]
+        },
         {
             "before": ["J"],
             "after": ["5", "j"]
