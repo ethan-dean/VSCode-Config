@@ -2,8 +2,13 @@
 ## Motivation
 To create a neovim-like, keyboard-driven, development experience for VSCode. While recognisably slower than neovim, VSCode has access to a lot more built-in functionality (no dealing with neovim LSPs...). The two parts I enjoyed most from neovim was how uncluttered the screen was and my keybinds from neovim.
 
+## Dependencies: 
+- Required extensions
+- Fonts:
+  - Cousine Nerd Font Mono (default)
+
 ## Extensions:
-#### Dependencies:
+#### Required:
 - Vim by vscodevim
 #### Themes:
 - Intellij C++ Theme (Dark) by Kleysley
@@ -16,7 +21,7 @@ To create a neovim-like, keyboard-driven, development experience for VSCode. Whi
 #### Interested:
 - Periscope (slow previews currently)
 
-## Setup
+## Config VCS Setup
 1. Create a `~/.config/vscode/` directory if needed (typical user config directory may depend on your OS).
     ```
     mkdir -p ~/.config/vscode/
